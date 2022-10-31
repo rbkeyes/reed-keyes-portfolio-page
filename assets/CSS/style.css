@@ -1,19 +1,41 @@
 :root {
-    --light: rgb(164, 209, 209);
+    --light: rgb(212, 199, 213);
     --dark: rgb(47, 60, 59);
+    --pad: 3%
 }   
 
+/* full page */
 * {
-    
 }
 
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+/* header */
+header {
+    color: var(--light);
+    line-height: 1.5;
+}
+
+/* header */
+header h1 {
+    font-size: 3em;
+    font-weight: bold;
+    color: var(--light);
+    padding: 2%;
+    vertical-align: middle;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--light);
+}
+
+/* hero image + text */
 .hero-image {
-    background-image: url("./assets/images/headshot-for-portfolio.jpg");
-    height: 25%;
+    background-image: url(../images/water-lily-photo.jpg);
+    height: 50vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -24,6 +46,22 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     color: white;
 }
+
+/* nav bar */
+.nav {
+}
+
+.nav ul {
+    text-align: right;
+    vertical-align: middle;
+    padding: 2%;
+}
+
+.nav ul li {
+    font-size: 2em;
+    font-style: none;
+}
+
+/* main content */
