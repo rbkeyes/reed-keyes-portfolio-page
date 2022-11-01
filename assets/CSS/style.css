@@ -2,8 +2,9 @@
     --light: rgb(226, 216, 226);
     --dark: rgb(29, 32, 32);
     --med: rgb(76, 11, 55);
+    --body-background: rgb(255, 196, 253);
     --link-pad: 1.5rem;
-}   
+}
 
 /* full page */
 * {
@@ -42,18 +43,15 @@ h1 {
 
 h2 {
     font-size: 150%;
-    text-decoration: underline;
-    padding: 2.5%
+    /* text-decoration: underline; */
+    padding: 5% 2% 2% 2%;
+    /* margin: 3%; */
+    background-color: var(--body-background);
+    /* transform: rotate(90deg); */
 }
 
 h3 {
     font-size: 100%;
-}
-
-
-p {
-    line-height: 1.5;
-    padding: 2.5%;
 }
 
 /* main content */
@@ -62,8 +60,13 @@ main {
     flex-wrap: wrap;
     justify-content: space-between;
     /* padding: 2rem */
+}
 
-    }
+main a {
+    text-decoration: none;
+    color: var(--dark);
+}
+
 
 /* hero image + text */
 /* .hero-image {
@@ -111,33 +114,63 @@ main {
 
 /* main content */
 
-.about-me {
+.section {
     display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 50%;
+    /* height: 55vh; */
     /* flex: 0 0 50em; */
+    vertical-align: center;
+    padding: 5%;
 }
 
 .headshot {
-    display: inline;
+    /* display: inline; */
     height: 50vh;
-    border: 8px rgb(201, 216, 219) double;
-    background-color: var(--dark);
-    padding: 3px;
-    margin: 2rem;
+    background-color: var(--body-background);
+    /* border: 5% solid var(--body-background); */
+    padding: 2%;
+    /* padding: 3px; */
+    margin-left:5%;
+    /* float: left; */
+}
+
+.section p {
+    line-height: 1.5;
+    height: 50vh;
+    background-color: var(--body-background);
+    padding: 3%;
+    /* margin: 1%; */
+    /* border: 3px double var(--med); */
+}
+
+
+.my-work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.my-work img {
+    height: 75vh;
+    width: 75vw;
+    object-fit: cover;
+    object-position: 100% 0;
+    padding: 2%;
 }
 
 .contact-me {
-    text-align: right;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.contact-me li{
+.contact-me li {
     display: inline-block;
     margin: var(--link-pad);
 }
 
-.contact-me a {
-    text-decoration: none;
-    color: var(--dark);
-}
+
 
 /* @media screen and (max-width 730px) { 
     
