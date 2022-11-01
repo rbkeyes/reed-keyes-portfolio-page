@@ -1,39 +1,72 @@
 :root {
-    --light: rgb(212, 199, 213);
-    --dark: rgb(47, 60, 59);
-    --pad: 3%
+    --light: rgb(226, 216, 226);
+    --dark: rgb(29, 32, 32);
+    --med: rgb(76, 11, 55);
+    --link-pad: 1.5rem;
 }   
 
 /* full page */
 * {
+    box-sizing: border-box;
 }
 
+/* body element
+set font family, size, color, backroung, and line height */
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 150%;
+    color: var(--dark);
+    background-color: var(--light);
+    /* line-height: 1.5; */
 }
 
-/* header */
 header {
+    display: flex;
+    /* flex: 1 1 50%; */
+    justify-content: space-between;
+    width: 100vw;
+    /* height: 10vh; */
     color: var(--light);
+    background-color: var(--med)
+}
+
+/* heading size and weight */
+h1 {
+    font-size: 200%;
+    line-height: 10vh;
+    min-width: 50vw;
+    vertical-align: bottom;
+    margin: 0 5rem 0 1.5rem;
+
+}
+
+h2 {
+    font-size: 150%;
+    text-decoration: underline;
+    padding: 2.5%
+}
+
+h3 {
+    font-size: 100%;
+}
+
+
+p {
     line-height: 1.5;
+    padding: 2.5%;
 }
 
-/* header */
-header h1 {
-    font-size: 3em;
-    font-weight: bold;
-    color: var(--light);
-    padding: 2%;
-    vertical-align: middle;
-}
+/* main content */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* padding: 2rem */
 
-header a {
-    text-decoration: none;
-    color: var(--light);
-}
+    }
 
 /* hero image + text */
-.hero-image {
+/* .hero-image {
     background-image: url(../images/water-lily-photo.jpg);
     height: 50vh;
     background-position: center;
@@ -47,21 +80,65 @@ header a {
     top: 50%;
     left: 50%;
     color: white;
-}
+} */
 
 /* nav bar */
-.nav {
-}
-
 .nav ul {
+    /* display: inline-block; */
+    line-height: 10vh;
+    /* width: 50vw; */
     text-align: right;
-    vertical-align: middle;
-    padding: 2%;
+    /* vertical-align: middle; */
+    font-size: 100%;
+    margin-left: 5rem;
+    /* padding-right: 2rem; */
 }
 
-.nav ul li {
-    font-size: 2em;
-    font-style: none;
+.nav a {
+    text-decoration: none;
+    color: var(--light);
 }
+
+.nav li {
+    display: inline-block;
+    /* justify-content: center; */
+    text-align: bottom;
+    margin-right: var(--link-pad);
+    /* font-size: 2em; */
+    /* font-style: none; */
+}
+
 
 /* main content */
+
+.about-me {
+    display: flex;
+    /* flex: 0 0 50em; */
+}
+
+.headshot {
+    display: inline;
+    height: 50vh;
+    border: 8px rgb(201, 216, 219) double;
+    background-color: var(--dark);
+    padding: 3px;
+    margin: 2rem;
+}
+
+.contact-me {
+    text-align: right;
+}
+
+.contact-me li{
+    display: inline-block;
+    margin: var(--link-pad);
+}
+
+.contact-me a {
+    text-decoration: none;
+    color: var(--dark);
+}
+
+/* @media screen and (max-width 730px) { 
+    
+} */
