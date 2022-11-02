@@ -43,11 +43,8 @@ h1 {
 
 h2 {
     font-size: 150%;
-    /* text-decoration: underline; */
     padding: 5% 3% 3% 3%;
-    /* margin: 3%; */
     background-color: var(--body-background);
-    /* transform: rotate(90deg); */
 }
 
 h3 {
@@ -101,19 +98,15 @@ main a {
     justify-content: space-between;
     width: 100%;
     height: 50%;
-    /* height: 55vh; */
-    /* flex: 0 0 50em; */
-    vertical-align: center;
     padding: 5%;
+    background-color: rgb(255, 231, 254);
 }
 
 .headshot {
-    /* display: inline; */
     height: 50vh;
-    background-color: var(--body-background);
-    border: 10px solid var(--body-background);
-    /* padding: 2% 0 2% 2%; */
-    margin-left:5%;
+    padding: 3px;
+    border: 15px solid var(--body-background);
+    
 }
 
 .section p {
@@ -121,8 +114,7 @@ main a {
     height: 50vh;
     background-color: var(--body-background);
     padding: 3%;
-    /* margin: 1%; */
-    /* border: 3px double var(--med); */
+    margin-left:5%;
 }
 
 
