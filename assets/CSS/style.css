@@ -15,37 +15,54 @@
 /* body element
 set font family, size, color, backroung, and line height */
 body {
-    /* display: block; */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 150%;
     color: var(--dark);
     background-color: var(--light);
-    width: 100%;
+    
+    /* height: 100vh;
+    width: 100vw; */
 }
 
 /* Header styling */
 header {
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
     width: 100%;
     color: var(--light);
-    background-color: var(--header-background)
+    background-color: var(--header-background);
+    padding: 3em 2em 2em 2em;
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+ul {
+    font-size: 2em;
+}
+
+p {
+    font-size: 2em;
 }
 
 header h1 {
-    font-size: 200%;
-    /* line-height: 10vh; */
-    /* min-width: 50vw; */
-    /* vertical-align: bottom; */
-    padding: 1em;
+    float: left;
 }
 
 /* nav bar */
 .nav ul {
-    /* line-height: 10vh; */
     text-align: right;
-    font-size: 100%;
-    padding: 2.5em;
+    font-size: 1.75em;
 }
 
 .nav a {
@@ -55,143 +72,63 @@ header h1 {
 
 .nav li {
     display: inline-block;
-    text-align: bottom;
-    padding-right: var(--pad);
-
+    padding-left: 1.5em;
+/* add padding above with media query */
 }
 
 /* main content */
-.content {
+
+/* card styling */
+.card {
+    display: inline-block;
+    background-color: var(--body-background);
+    width: 90vw;
+    padding: 3em;
+    margin: 5em;
+}
+
+.headshot {
+    height: 25em;
+    width: 20em;
+    object-fit: cover; 
+    object-position: 65% 35%;   
+    float: right;
+    align-items: center;
+}
+
+.card-content {
     display: flex;
-    flex-direction: column;
-    /* display: flex; */
-    /* flex-wrap: wrap; */
-    /* width: 100%; */
-    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    padding-right: 3em;
 }
 
-h2 {
-    /* display: flex; */
-    font-size: 150%;
-    /* height: 100%; */
-    /* float: right; */
-    /* padding: 5% 3% 3% 3%; */
-    padding: var(--pad);
-    background-color: var(--body-background);
-}
-
-/* about-me section */
-.about-me {
-    display: inline-block;
-    background-color: var(--body-background);
-    width: 90%;
-    margin: 5%;
-}
-
-#headshot {
-    display: inline-block;
-    height: 20em;    
-    padding: var(--pad);
-    float: left;
-    vertical-align: middle;
-}
-
-.about-me p {
+.card h2 {
     display: block;
+    padding-bottom: var(--pad);
+}
+
+.card p {
     line-height: 1.5;
-    /* height: 20em; */
-    width: 90%;
     background-color: var(--body-background);
-    /* padding: var(--pad); */
-    /* margin-left: 5%; */
-    /* text-align: left;
-    float: right; */
 }
 
-.my-work {
-    display: block;
-    height: 25vh;
-    width: 100vw;
-    padding: 5%;
-    margin-bottom: 10%;
+.card h3 {
+    padding-bottom: var(--pad);
 }
 
-.my-work img {
-    display: block;
-    height: 20em;    
-    padding: 3px;
-    border: 15px solid var(--body-background);
-    float: left;
-}
-
-/* sub-sections of main ("My Work" sub-categories) */
-/* .sub-section { */
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* flex-wrap: wrap; */
-    /* justify-content: space-between; */
-    /* width: 100vw; */
-    /* margin-left: 5%; */
-/* } */
-
-/* .sub-section h3 {
-    /* display: block; */
-    /* width: 100%; */
-    /* font-size: 125%; */
-    /* color: var(--body-background); */
-    /* background-color: var(--header-background); */
-    /* padding: 10% 8% 8% 8%; */
-/* } */ 
-
-/* .section ul { */
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* flex: wrap; */
-    /* justify-content: space-between; */
-/* } */
-
-.section li {
-    /* display: block; */
-    width: 100%;
-    background-color: var(--body-background);
-    padding: 3%;
-    /* margin-left:5%; */
-}
-
-/* .section img {
-    height: 50%;
-    width: 100%;
-    object-fit: cover;
-    object-position: 100% 0;
-    padding: 2%;
-} */
-
-/* .contact-me {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.contact-me li {
-    display: flex;
-    flex-wrap: wrap;
-    margin: var(--link-pad);
-} */
-
-.section a {
+.card a {
     text-decoration: none;
     color: var(--dark);
 }
 
-.contact-me {
-    display: block;
-    height: 20em;    
-    padding: 3px;
-    border: 15px solid var(--body-background);
-    float: left;
-
+.my-work-imgs {
+    height: 25%;
+    width: 100%;   
 }
 
 
-/* @media screen and (max-width 730px) { 
-    
-} */
+
+
+/* media query to left-align and wrap header nav as view width decreases */
+
+/* media query to shrink text below certain view width */
