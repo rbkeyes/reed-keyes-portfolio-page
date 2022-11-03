@@ -1,9 +1,10 @@
+/* variables */
 :root {
     --light: rgb(226, 216, 226);
     --dark: rgb(29, 32, 32);
     --header-background: rgb(76, 11, 55);
     --body-background: rgb(255, 196, 253);
-    --link-pad: 1.5rem;
+    --pad: 1.5em;
 }
 
 /* full page */
@@ -14,66 +15,37 @@
 /* body element
 set font family, size, color, backroung, and line height */
 body {
+    /* display: block; */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 150%;
     color: var(--dark);
     background-color: var(--light);
-    /* line-height: 1.5; */
+    width: 100%;
 }
 
+/* Header styling */
 header {
     display: flex;
-    /* flex: 1 1 50%; */
     justify-content: space-between;
-    width: 100vw;
-    /* height: 10vh; */
+    width: 100%;
     color: var(--light);
     background-color: var(--header-background)
 }
 
-/* heading size and weight */
-h1 {
+header h1 {
     font-size: 200%;
-    line-height: 10vh;
-    min-width: 50vw;
-    vertical-align: bottom;
-    margin: 0 5rem 0 1.5rem;
-
-}
-
-h2 {
-    font-size: 150%;
-    padding: 5% 3% 3% 3%;
-    background-color: var(--body-background);
-}
-
-h3 {
-    font-size: 125%;
-}
-
-/* main content */
-main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    /* padding: 2rem */
-}
-
-main a {
-    text-decoration: none;
-    color: var(--dark);
+    /* line-height: 10vh; */
+    /* min-width: 50vw; */
+    /* vertical-align: bottom; */
+    padding: 1em;
 }
 
 /* nav bar */
 .nav ul {
-    /* display: inline-block; */
-    line-height: 10vh;
-    /* width: 50vw; */
+    /* line-height: 10vh; */
     text-align: right;
-    /* vertical-align: middle; */
     font-size: 100%;
-    margin-left: 5rem;
-    /* padding-right: 2rem; */
+    padding: 2.5em;
 }
 
 .nav a {
@@ -83,65 +55,139 @@ main a {
 
 .nav li {
     display: inline-block;
-    /* justify-content: center; */
     text-align: bottom;
-    margin-right: var(--link-pad);
-    /* font-size: 2em; */
-    /* font-style: none; */
-}
+    padding-right: var(--pad);
 
+}
 
 /* main content */
-
-.section {
+.content {
     display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: 50%;
-    padding: 5%;
-    background-color: rgb(255, 231, 254);
+    flex-direction: column;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* width: 100%; */
+    /* justify-content: space-between; */
 }
 
-.headshot {
-    height: 50vh;
-    padding: 3px;
-    border: 15px solid var(--body-background);
-    
-}
-
-.section p {
-    line-height: 1.5;
-    height: 50vh;
+h2 {
+    /* display: flex; */
+    font-size: 150%;
+    /* height: 100%; */
+    /* float: right; */
+    padding: 5% 3% 3% 3%;
+    padding: var(--pad);
     background-color: var(--body-background);
-    padding: 3%;
-    margin-left:5%;
 }
 
+/* about-me section */
+.about-me {
+    display: inline-block;
+    background-color: var(--body-background);
+    width: 90%;
+    margin: 5%;
+}
+
+#headshot {
+    display: inline-block;
+    height: 20em;    
+    padding: var(--pad);
+    float: left;
+    vertical-align: middle;
+}
+
+.about-me p {
+    display: block;
+    line-height: 1.5;
+    /* height: 20em; */
+    background-color: var(--body-background);
+    padding: 1.5em;
+    margin-left:5%;
+    /* float: right; */
+}
 
 .my-work {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: block;
+    height: 25vh;
+    width: 100vw;
+    padding: 5%;
+    margin-bottom: 10%;
 }
 
 .my-work img {
-    height: 75vh;
-    width: 75vw;
+    display: block;
+    height: 20em;    
+    padding: 3px;
+    border: 15px solid var(--body-background);
+    float: left;
+}
+
+/* sub-sections of main ("My Work" sub-categories) */
+/* .sub-section { */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* flex-wrap: wrap; */
+    /* justify-content: space-between; */
+    /* width: 100vw; */
+    /* margin-left: 5%; */
+/* } */
+
+/* .sub-section h3 {
+    /* display: block; */
+    /* width: 100%; */
+    /* font-size: 125%; */
+    /* color: var(--body-background); */
+    /* background-color: var(--header-background); */
+    /* padding: 10% 8% 8% 8%; */
+/* } */ 
+
+/* .section ul { */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* flex: wrap; */
+    /* justify-content: space-between; */
+/* } */
+
+.section li {
+    /* display: block; */
+    width: 100%;
+    background-color: var(--body-background);
+    padding: 3%;
+    /* margin-left:5%; */
+}
+
+/* .section img {
+    height: 50%;
+    width: 100%;
     object-fit: cover;
     object-position: 100% 0;
     padding: 2%;
-}
+} */
 
-.contact-me {
+/* .contact-me {
     display: flex;
     flex-wrap: wrap;
 }
 
 .contact-me li {
-    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
     margin: var(--link-pad);
+} */
+
+.section a {
+    text-decoration: none;
+    color: var(--dark);
 }
 
+.contact-me {
+    display: block;
+    height: 20em;    
+    padding: 3px;
+    border: 15px solid var(--body-background);
+    float: left;
+
+}
 
 
 /* @media screen and (max-width 730px) { 
