@@ -75,7 +75,7 @@ h2 {
     font-size: 150%;
     /* height: 100%; */
     /* float: right; */
-    padding: 5% 3% 3% 3%;
+    /* padding: 5% 3% 3% 3%; */
     padding: var(--pad);
     background-color: var(--body-background);
 }
@@ -100,10 +100,12 @@ h2 {
     display: block;
     line-height: 1.5;
     /* height: 20em; */
+    width: 90%;
     background-color: var(--body-background);
-    padding: 1.5em;
-    margin-left:5%;
-    /* float: right; */
+    /* padding: var(--pad); */
+    /* margin-left: 5%; */
+    /* text-align: left;
+    float: right; */
 }
 
 .my-work {
