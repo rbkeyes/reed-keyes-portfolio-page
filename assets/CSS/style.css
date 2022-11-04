@@ -18,115 +18,178 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: var(--dark);
     background-color: var(--light);
-    
-    /* height: 100vh;
-    width: 100vw; */
+    height: 100vw;
+    width: 100vw;
+    align-items: center;
 }
 
-/* Header styling */
+/* Header */
 header {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     flex-wrap: wrap;
-    width: 100%;
+    width: 100vw;
     color: var(--light);
     background-color: var(--header-background);
     padding: 3em 2em 2em 2em;
 }
 
 h1 {
-    font-size: 3.5em;
-}
-
-h2 {
     font-size: 3em;
-}
-
-h3 {
-    font-size: 2em;
+    float: left;
 }
 
 ul {
     font-size: 2em;
-}
-
-p {
-    font-size: 2em;
-}
-
-header h1 {
-    float: left;
-}
-
-/* nav bar */
-.nav ul {
     text-align: right;
-    font-size: 1.75em;
 }
 
-.nav a {
+a {
     text-decoration: none;
     color: var(--light);
 }
 
-.nav li {
+li {
     display: inline-block;
     padding-left: 1.5em;
-/* add padding above with media query */
+    /* add padding above with media query */
 }
 
-/* main content */
+/* about me*/
+h2 {
+    font-size: 3em;
+    padding: 0 1.5em .25em 0;
+    border-bottom: 2px solid var(--dark);
+    /* margin: 3em 1em 0 0; */
+}
 
-/* card styling */
-.card {
-    display: inline-block;
+p {
+    font-size: 1.75em;
+    line-height: 1.5;
+    width: 75%;
+}
+
+.about-me {
     background-color: var(--body-background);
     width: 90vw;
     padding: 3em;
-    margin: 5em;
+    margin: 5vw;
 }
 
-.headshot {
-    height: 25em;
-    width: 20em;
-    object-fit: cover; 
-    object-position: 65% 35%;   
-    float: right;
+.about-me div {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
-.card-content {
+#headshot {
+    height: 25em;
+    float: right;
+    background-color: var(--body-background);
+    background-color: var(--light);
+    padding: .5em;
+    margin: 3em 0em 0 10em;
+}
+
+/* my work */
+h3 {
+    font-size: 2.5em;
+    /* height: 100%; */
+    padding: 1em 0;
+    writing-mode: vertical-rl;
+}
+
+.my-work {
+    background-color: var(--body-background);
+    width: 90vw;
+    padding: 3em;
+    margin: 5vw;
+
+}
+
+.section-flex {
     display: flex;
     flex-wrap: wrap;
-    padding-right: 3em;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 1em; 
 }
 
-.card h2 {
-    display: block;
-    padding-bottom: var(--pad);
-}
-
-.card p {
-    line-height: 1.5;
-    background-color: var(--body-background);
-}
-
-.card h3 {
-    padding-bottom: var(--pad);
-}
-
-.card a {
-    text-decoration: none;
-    color: var(--dark);
+.section-flex div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1em 0;
+   
+    /* align-items: center; */
+    /* flex: 0 1 20em; */
 }
 
 .my-work-imgs {
-    height: 25%;
-    width: 100%;   
+    width: 40em;
+    height: 30em;
+    object-fit: cover;
+    /* flex: 4 0 25em; */
+    /* padding: .5em; */
+    background-color: var(--light);
+    padding: .5em;
+    margin-left: 2em;
+    
+}
+
+#refactor-img {
+    width: 75vw;
+    height: 30vw;
+    object-position: 30% 70%;
+}
+
+#prework-img {
+    object-position: 100% 0;
+}
+
+#alsia-img {
+    object-position: 95% 5%;
+}
+
+#cloudbow-img {
+    object-position: 50% 50%;
+}
+
+#teaching-img {
+    object-position: 90% 10%;
+}
+
+#flex-bigger {
+    flex: 1 0 80%;
+}
+
+.flex-smaller {
+    flex: 0 2 40%;
 }
 
 
+/* footer */
+footer {
+    width: 100vw;
+    color: var(--light);
+    background-color: var(--header-background);
+    padding: 2em 2em 3em 2em;
+}
+
+.contact-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+
+.contact-me ul {
+    display: inline-block;
+    padding-left: 1.5em;
+    font-size: 2vw;
+}
 
 
 /* media query to left-align and wrap header nav as view width decreases */
