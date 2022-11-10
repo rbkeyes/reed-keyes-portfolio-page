@@ -2,7 +2,7 @@
 
 ## Description
 
-I designed this webpage to serve as a portfolio to showcase my professional work as a developer and beyond (Note: at this time, I am still working to build my portfolio as a web developer. In the meantime, I have provided links to my publications and teaching as placeholders, with the intention of creating either a separate section or entirely new page for these categories at a future date). This was an excellent opportunity for me to practice flexbox in order to create a responsive portfolio page that is viewable on a variety of devices.
+I designed this webpage to serve as a portfolio to showcase my professional work as a developer and beyond (Note: at this time, I am still working to build my portfolio as a web developer. In the meantime, I have provided links to my publications and teaching as placeholders, with the intention of creating either a separate section or entirely new page for these categories at a future date). This was an excellent opportunity for me to practice flexbox in order to create a responsive portfolio page.
 
 ## Table of Contents (Optional)
 
@@ -12,7 +12,7 @@ I designed this webpage to serve as a portfolio to showcase my professional work
 
 ## Usage
 
-It includes intra-page navigation links in both the header and footer, as well as external links to my projects. It also includes links to my email and social media, located in both the "Contact Me" section as well as the page footer. 
+This page includes intra-page navigation links in both the header and footer to the "About Me", "My Work" and "Contact Me" sections of the page. The images in the "My Work" serve as hyperlinks to my project pages. There links to my email and social media in both the "Contact Me" section as well as the page footer. The format of the page adjusts as screen width decreases, to improve ease of viewing across a wide array of devices.
 
 To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
 
