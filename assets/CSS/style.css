@@ -22,7 +22,8 @@ body {
 }
 
 /* header and footer*/
-header, footer{
+header,
+footer {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -59,7 +60,7 @@ h3 {
     top: 0px;
     left: 0px;
     background-color: var(--dark);
-    padding:15px 10px 10px 10px;
+    padding: 15px 10px 10px 10px;
     height: 100%;
     box-shadow: 10px 0px 15px -2px var(--dark);
 }
@@ -77,7 +78,7 @@ ul {
 li {
     display: inline;
     font-size: 2rem;
-    padding-left:1.5rem;
+    padding-left: 1.5rem;
 }
 
 li:first-of-type {
@@ -92,7 +93,7 @@ a {
 
 /* paragraph font & padding */
 p {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     line-height: 1.5;
     padding-right: 3rem;
 }
@@ -108,7 +109,7 @@ footer {
 }
 
 footer li {
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 /* card styling */
@@ -134,8 +135,6 @@ footer li {
 
 .card div {
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 /* flex wrap */
@@ -145,7 +144,7 @@ footer li {
 
 .flex-wrap div {
     position: relative;
-    margin: 1.5rem;
+    margin: 2%;
 }
 
 /* image styling */
@@ -157,12 +156,15 @@ footer li {
 }
 
 #headshot {
-    height: 20em;
+    width: 20rem;
+    height: 25rem;
+    object-fit: cover;
+    object-position: 100% 0;
     float: right;
 }
 
 #refactor-img {
-    width: 80vw;
+    width: 77vw;
     height: 40vw;
     object-position: 100% 0;
 }
@@ -183,20 +185,3 @@ footer li {
     object-position: 90% 10%;
 }
 
-/* add flex and spacing to contact links */
-
-
-/* media query to left-align and wrap header nav as view width decreases */
-@media screen and (max-width: 820px) {
-    .content-flex div {
-        width: 100%;
-    }
-}
-/* media query to shrink text below certain view width */
-
-
-/* TO DO */
-/* add media queries */
-/* refactor code */
-/* add README text */
-/* add hero */
