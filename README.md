@@ -4,7 +4,7 @@
 
 I designed this webpage to serve as a portfolio to showcase my professional work as a developer and beyond (Note: at this time, I am still working to build my portfolio as a web developer. In the meantime, I have provided links to my publications and teaching as placeholders, with the intention of creating either a separate section or entirely new page for these categories at a future date). This was an excellent opportunity for me to practice flexbox in order to create a responsive portfolio page.
 
-[Link to deployed portfolio]()
+[Link to deployed portfolio](https://rbkeyes.github.io/reed-keyes-portfolio-page/)
 
 ## Table of Contents (Optional)
 
