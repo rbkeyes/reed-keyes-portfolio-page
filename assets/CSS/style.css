@@ -19,8 +19,6 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: var(--dark);
     background-color: var(--light);
-    /* align-items: center; */
-    /* text-align: center; */
 }
 
 /* header and footer*/
@@ -53,7 +51,7 @@ h2 {
 }
 
 h3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: left;
     writing-mode: vertical-rl;
     color: var(--light);
@@ -67,7 +65,7 @@ h3 {
 }
 
 h4 {
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 /* list styling */
@@ -78,8 +76,8 @@ ul {
 
 li {
     display: inline;
-    font-size: 1.5rem;
-    padding-left: 1.5rem;
+    font-size: 2rem;
+    padding-left:1.5rem;
 }
 
 li:first-of-type {
@@ -92,15 +90,15 @@ a {
     color: var(--light);
 }
 
-/* p styling */
+/* paragraph font & padding */
 p {
     font-size: 1.75rem;
     line-height: 1.5;
     padding-right: 3rem;
 }
 
+/* image shadow */
 img {
-    background-color: var(--dark);
     box-shadow: 0 0 10px var(--dark);
 }
 
@@ -122,38 +120,51 @@ footer li {
     margin: 5vw;
 }
 
+.card ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-size: 2em;
+    width: 100%;
+}
+
+.card a {
+    color: var(--dark);
+}
+
 .card div {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
+/* flex wrap */
 .flex-wrap {
     flex-wrap: wrap;
 }
 
 .flex-wrap div {
     position: relative;
-    margin: 1rem;
+    margin: 1.5rem;
 }
 
+/* image styling */
+/* set size and crop images */
 .my-work-imgs {
-    color: var(--light);
-    width: 33vw;
+    width: 37vw;
     height: 20vw;
     object-fit: cover;
 }
 
-/* specific img styling */
 #headshot {
     height: 20em;
     float: right;
 }
 
 #refactor-img {
-    width: 75vw;
+    width: 80vw;
     height: 40vw;
-    object-position: 30% 70%;
+    object-position: 100% 0;
 }
 
 #prework-img {
@@ -172,46 +183,15 @@ footer li {
     object-position: 90% 10%;
 }
 
-/* Contact-Me */
-.contact-me {
-    background-color: var(--cardcolor);
-    width: 90vw;
-    padding: 3em;
-    margin: 5vw;
-}
-
-.contact-me ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    /* align-items: center; */
-    font-size: 2em;
-    width: 100%;
-}
-
-.contact-me li {
-    font-size: 1.5rem;
-    padding: .5em;
-}
-
-.contact-me a {
-    color: var(--dark);
-}
-
-/* footer */
-
-.footer li:first-of-type {
-    padding-left: 0;
-}
-
+/* add flex and spacing to contact links */
 
 
 /* media query to left-align and wrap header nav as view width decreases */
-/* @media screen and (max-width: 820px) {
+@media screen and (max-width: 820px) {
     .content-flex div {
         width: 100%;
     }
-} */
+}
 /* media query to shrink text below certain view width */
 
 
