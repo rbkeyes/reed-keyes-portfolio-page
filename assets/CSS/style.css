@@ -163,11 +163,16 @@ footer li {
     float: right;
 }
 
-#refactor-img {
+#outdoorsyish-img {
     width: 77vw;
     height: 40vw;
+    object-position: 90% 10%;
+}
+
+#refactor-img {
     object-position: 100% 0;
 }
+
 
 #prework-img {
     object-position: 100% 0;
